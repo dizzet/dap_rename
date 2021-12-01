@@ -1,13 +1,17 @@
 import os, re
 
 regx = re.compile('\.jpg$|\.jpeg$')
+png_regx = re.compile('\.png$')
 
 for dn, sdl, fl in os.walk('.'):
     imgs = list(filter(regx.search, fl))
     if len(imgs) > 1:
         for img in imgs:
-            print(os.path.join(dn,img))
+            print('Directory has more than 1 image: {dn}')
     elif len(imgs) == 0:
+        pngs = list(filter(png_regx.search, fl))
+        if len(pngs) > 0:
+            print('Directory has only png images: {dn}')
         continue
     else:
         ext = imgs[0][imgs[0].rfind('.'):]
