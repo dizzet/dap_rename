@@ -1,3 +1,6 @@
+#TODO: ID3 - https://mutagen.readthedocs.io/en/latest/index.html
+#      image conversion - https://python-pillow.org/ or OpenCV ck2
+
 import os, re
 
 regx = re.compile('\.jpg$|\.jpeg$')
