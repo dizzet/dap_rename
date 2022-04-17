@@ -1,5 +1,6 @@
 #TODO: args
 #      two modes - cover.jpg | %dirname%.jpg
+#      image conversion - Pillow
 
 import mutagen
 import os
