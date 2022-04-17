@@ -1,5 +1,5 @@
-#TODO: ID3 - https://mutagen.readthedocs.io/en/latest/index.html
-#      image conversion - https://python-pillow.org/ or OpenCV ck2
+#TODO: args
+#      two modes - cover.jpg | %dirname%.jpg
 
 import mutagen
 import os
