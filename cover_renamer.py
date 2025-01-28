@@ -1,5 +1,4 @@
 #TODO: proper logic for Artist tag
-#      image conversion - Pillow
 
 import argparse
 import mutagen
