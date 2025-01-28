@@ -10,7 +10,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     
     parser.add_argument('folder', help='Root directory where to look for music albums', type=str, default='.')
-    parser.add_argument('-c', '--cover', help="Rename all images to cover.'ext' instead of 'dirname'.'ext'",
+    parser.add_argument('-c', '--cover', help='Rename all images to cover."ext" instead of "dirname"."ext"',
                         action='store_true')
     parser.add_argument('-s', '--skip', help='Skip "Artist" tag population with "Album Artist" value, i.e. leave it intact',
                         action='store_true', default=False)
